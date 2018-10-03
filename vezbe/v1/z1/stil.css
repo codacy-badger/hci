@@ -1,0 +1,37 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fg {
+    padding-bottom: 1em;
+}
+
+label {
+    font-size: 12pt;
+    float: left;
+    text-align: right;
+    padding-right: 1.5em;
+    width: 4em;
+}
+
+input, select {
+    font-size: 12pt;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 16em;
+}
+
+textarea {
+    font-size: 12pt;
+    height: 10em;
+}
+
+input[type="submit"] {
+    color: #ffffff;
+    background-color: #00b2df;
+    border-color: #9b9b9b;
+    border-radius: 0.5em;
+    height: 3em;
+    width: 9em;
+}
