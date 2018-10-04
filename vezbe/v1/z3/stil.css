@@ -1,0 +1,66 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    max-width: 15em;
+}
+
+.citat {
+    max-width: 20em;
+    text-align: justify;
+}
+
+.citatby {
+    text-align: right;
+    font-style: italic;
+} 
+
+.page {
+    float: left;
+    max-width: 30em;
+    padding-top: 3em;
+    padding-left: 2em;
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.content {
+    text-align: justify;
+    white-space: pre-line;
+
+}
+
+.side {
+    float: right;
+    align-content: right;
+    position: absolute;
+    padding-left: 35em;
+}
+
+table {
+    border: 1px solid #858585; 
+    border-collapse: collapse; 
+    background: #f7f7f7;
+}
+
+th, td { 
+    border-top: none;
+    border-bottom: 1px solid #858585; 
+}
+
+table img {
+    max-width: 300px;
+}
+
+.img {
+    padding: 0px;
+    border-bottom: none;
+}
+
