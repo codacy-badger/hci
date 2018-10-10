@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+p, table {
+    width: 600px;
+}
+
+.hierarchy {
+    padding-top: 100px;
+}
+
+ul {
+    padding-bottom: 100px;
+}
