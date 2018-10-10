@@ -42,3 +42,8 @@ input[type="submit"] {
     height: 3em;
     width: 10em;
 }
+
+input:invalid {
+    background-color: #ff836d;
+    border: 1px solid #942916;
+}
