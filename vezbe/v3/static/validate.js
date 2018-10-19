@@ -1,23 +1,28 @@
 let regForm = document.getElementById('regform');
 
-regForm.addEventListener('keyup', () => {
-    this.passrepeat.setCustomValidity('');
-    this.birthdate.setCustomValidity('');
-    this.passmessage.innerHTML = '';
-
-    if (this.pass.value !== this.passrepeat.value) {
-        this.passrepeat.setCustomValidity('Lozinke se ne poklapaju');
-        this.passmessage.innerHTML = 'Lozinke se ne poklapaju!';
+regForm.addEventListener('keyup', (event) => {
+    if (event.srcElement.id === this.pass.id || event.srcElement.id === this.passrepeat.id) {
+        if (this.passrepeat.isValid())
+        this.passrepeat.setCustomValidity('');
+        this.passmessage.innerHTML = '';
+        
+        if (this.pass.value !== this.passrepeat.value) {
+            this.passrepeat.setCustomValidity('Lozinke se ne poklapaju');
+            this.passmessage.innerHTML = 'Lozinke se ne poklapaju!';
+        }
     }
 
-    let age = getAgeFromBirthDate(this.birthdate);
-    if (age < 18) {
-        this.birthdate.setCustomValidity('Morate imati vise od 18 godina da bi ste se registrovali...');
-        return;
+    if (event.srcElement.id === this.birthdate.id) {
+        this.birthdate.setCustomValidity('');
+        let age = getAgeFromBirthDate(this.birthdate);
+        if (age < 18) {
+            this.birthdate.setCustomValidity('Morate imati vise od 18 godina da bi ste se registrovali...');
+            return;
+        }
     }
 });
 
-regForm.addEventListener('submit', (event) =>  {
+regForm.addEventListener('submit', (event) => {
     event.preventDefault();
 });
 
