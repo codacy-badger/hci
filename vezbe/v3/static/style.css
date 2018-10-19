@@ -1,0 +1,7 @@
+input:invalid {
+    border: 1px solid #a50d0d;
+}
+
+.form-group > input:valid {
+    border: 1px solid #35ff1b;
+}
